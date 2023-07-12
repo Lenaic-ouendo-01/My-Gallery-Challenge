@@ -2,3 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card{
+    @apply overflow-hidden rounded-xl shadow-gray-500/20 shadow-xl;
+}
+
+.full{
+    @apply h-full w-full;
+}

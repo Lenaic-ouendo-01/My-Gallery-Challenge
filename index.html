@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="./src/style.css">
     <title>My Gallery</title>
   </head>
-  <body class="max-w-5xl w-full mx-auto">
+  <body class="m-10 max-w-5xl w-full mx-auto">
     <header></header>
 
-    <main>
-      <div class="">
+    <main class="px-2">
+      <div class="font-body">
         <img src="./src/assets/profilePhoto.png" class="sm:w-36 m-auto w-24 sm:mt-14 mt-8 rounded-2xl">
         <div class="sm:text-2xl font-bold text-sm text-center mt-2 text-neutral-600">
           Rodney Cotton
@@ -35,33 +35,36 @@
         </div>
       </div>
   
-      <div>
-        <div class="flex sm:mt-14 mt-10 justify-evenly">
-          <img src="./src/assets/photo1.png" class="shadow-gray-500/20 shadow-xl sm:max-h-72 max-h-28 rounded-xl">
-          <img src="./src/assets/photo2.png" class="shadow-gray-500/20 shadow-xl rounded-xl max-h-28 sm:max-h-72">
+      <div class="grid grid-cols-3 gap-4 mt-10 sm:mt-14 mb-4">
+        <div class="card">
+          <img src="./src/assets/photo1.png" class="full">
         </div>
-        <div class="flex justify-evenly sm:mt-7 mt-3">
-          <div>
-            <div>
-              <img src="./src/assets/photo3.png" class="shadow-gray-500/20 shadow-xl rounded-xl max-h-28 sm:max-h-72">
-            </div>
-            <div class="flex sm:mt-7 mt-3">
-              <img src="./src/assets/photo6.png" class="rounded-xl mr-3 sm:mr-8 shadow-gray-500/20 max-h-28 shadow-xl sm:max-h-72 sm:w-72">
-              <img src="./src/assets/photo5.png" class="rounded-xl max-h-28 shadow-gray-500/20 shadow-xl sm:max-h-72 sm:w-72">
-            </div>
-          </div>
-          <div>
-            <img src="./src/assets/photo_4.png" class="rounded-xl shadow-gray-500/20 shadow-xl w-28 sm:w-72">
-          </div>
+        <div class="card col-span-2">
+          <img src="./src/assets/photo2.png" class="full"> 
+        </div>
+      </div>
+
+      <div class="grid grid-cols-3 grid-rows-2 gap-4">
+        <div class="card col-start-1 col-end-3 row-start-1">
+          <img src="./src/assets/photo3.png" class="full">
+        </div>
+        <div class="card col-start-1 col-end-1 row-start-2">
+          <img src="./src/assets/photo6.png" class="full">
+        </div>
+        <div class="card col-start-2 col-end-2 row-start-2">
+          <img src="./src/assets/photo5.png" class="full">
+        </div>
+        <div class="card col-start-3 col-end-3 row-start-1 row-end-3">
+          <img src="./src/assets/photo_4.png" class="full">
         </div>
       </div>
     </main>
 
-    <footer class="flex justify-center sm:mt-16 mt-48">
-      <div class=" text-sm text-gray-800/40">
+    <footer class="flex justify-center sm:mt-9 mt-36">
+      <div class=" text-sm font-body text-gray-800/40">
         created by
         <a href="https://github.com/Lenaic-ouendo-01/My-Gallery-Challenge.git">
-          <span class="underline hover:underline-offset-4">Lenaic-ouendo-01</span>-devChallenges.io
+          <span class="font-bold text-indigo-950">×͜× ᗰ𝙰ļ𝕝𐍈ℝ𐍅</span>-devChallenges.io
         </a>
       </div>
     </footer>
